@@ -17,10 +17,6 @@ export class PensamentoService {
       .set('_page', pagina.toString())
       .set('_limit', itensPorPagina.toString());
 
-    // return this.http.get<Pensamento[]>(
-    //   `${this.API}?_page=${pagina}&_limit=${itensPorPagina}`
-    // );
-
     return this.http.get<Pensamento[]>(this.API, { params });
   }
 
