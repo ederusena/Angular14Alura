@@ -55,7 +55,7 @@ O FormControlName é uma diretiva que sincroniza os controles em um formGroup at
 ### Validators
 
 ```ts
- ngOnInit(): void {
+ngOnInit(): void {
     this.formulario = this.formBuilder.group({
       conteudo: ['', Validators.required],
       autoria: ['', Validators.required],
@@ -67,5 +67,31 @@ O FormControlName é uma diretiva que sincroniza os controles em um formGroup at
 ## Validators pattern e minLength
 
 ```ts
-
+ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      conteudo: ['',
+        Validators.compose(
+          [
+            Validators.required,
+            Validators.pattern(/(.|\s)*\S(.|\s)*/),
+          ]
+        )
+      ],
+      autoria: ['',
+        Validators.compose(
+          [
+            Validators.required,
+            Validators.minLength(10)
+          ]
+        )
+      ],
+      modelo: ['modelo1',
+        Validators.compose(
+          [
+            Validators.required
+          ]
+        )
+      ],
+    });
+  }
 ```
