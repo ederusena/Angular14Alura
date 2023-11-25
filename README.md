@@ -112,3 +112,32 @@ ngOnInit(): void {
   <span>O pensamento deve ter entre 3 e 280 caracteres.</span>
 </div>
 ```
+
+## HttpParams Paginacao
+
+```ts
+listar(pagina: number): Observable<Pensamento[]> {
+    const itensPorPagina = 6;
+    let params = new HttpParams()
+      .set('_page', pagina.toString())
+      .set('_limit', itensPorPagina.toString());
+
+    // return this.http.get<Pensamento[]>(
+    //   `${this.API}?_page=${pagina}&_limit=${itensPorPagina}`
+    // );
+
+    return this.http.get<Pensamento[]>(this.API, { params });
+  }
+```
+
+```ts
+listaPensamentos: Pensamento[] = [];
+  paginaAtual: number = 1;
+  constructor(private service: PensamentoService) { }
+
+  ngOnInit(): void {
+    this.service.listar(this.paginaAtual).subscribe((listaPensamentos) => {
+      this.listaPensamentos = listaPensamentos
+    })
+  }
+```

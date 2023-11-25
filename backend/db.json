@@ -29,6 +29,36 @@
       "autoria": "",
       "modelo": "modelo1",
       "id": 6
+    },
+    {
+      "conteudo": "Chupa 1",
+      "autoria": "Chupa 1",
+      "modelo": "modelo1",
+      "id": 7
+    },
+    {
+      "conteudo": "Chupa 2",
+      "autoria": "Chupa 2",
+      "modelo": "modelo2",
+      "id": 8
+    },
+    {
+      "conteudo": "Chupa 3",
+      "autoria": "Chupa 3",
+      "modelo": "modelo3",
+      "id": 9
+    },
+    {
+      "conteudo": "Chupa 4",
+      "autoria": "Chupa 4",
+      "modelo": "modelo1",
+      "id": 10
+    },
+    {
+      "conteudo": "Chupa 5",
+      "autoria": "Chupa 5",
+      "modelo": "modelo2",
+      "id": 11
     }
   ]
 }
