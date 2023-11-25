@@ -51,3 +51,21 @@ O FormGroup representa um grupo de dados no formulário. Você pode ter vários 
 
 O FormControlName é uma diretiva que sincroniza os controles em um formGroup através da sincronização por meio do nome da propriedade do formGroup, como fiz com o conteúdo, autoria e modelo.
 ```
+
+### Validators
+
+```ts
+ ngOnInit(): void {
+    this.formulario = this.formBuilder.group({
+      conteudo: ['', Validators.required],
+      autoria: ['', Validators.required],
+      modelo: ['modelo1', Validators.required],
+    });
+  }
+```
+
+## Validators pattern e minLength
+
+```ts
+
+```
