@@ -95,3 +95,20 @@ ngOnInit(): void {
     });
   }
 ```
+
+## Exibindo mensagens de erro
+
+```html
+<div
+  class="mensagem__erro"
+  *ngIf="formulario.get('conteudo')?.errors?.['required'] && formulario.get('conteudo')?.touched"
+>
+  <span>O campo pensamento é obrigatório.</span>
+</div>
+<div
+  class="mensagem__erro"
+  *ngIf="formulario.get('conteudo')?.errors?.['minlength'] && formulario.get('conteudo')?.touched"
+>
+  <span>O pensamento deve ter entre 3 e 280 caracteres.</span>
+</div>
+```

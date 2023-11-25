@@ -25,6 +25,7 @@ export class CriarPensamentoComponent implements OnInit {
         Validators.compose([
           Validators.required,
           Validators.pattern(/(.|\s)*\S(.|\s)*/),
+          Validators.minLength(3),
         ]),
       ],
       autoria: [

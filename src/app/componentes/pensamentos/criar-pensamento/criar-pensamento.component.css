@@ -10,6 +10,20 @@
   margin-top: 70px;
   width: 200px;
 }
+.mensagem__erro {
+  background: #FF0000;
+  border-radius: 13px;
+  padding: 0.5rem;
+  margin: 0 0 2rem;
+  top: -16px;
+  position: relative;
+}
+
+.mensagem__erro > span{
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
 
 .criar-pensamentos {
   padding: 2rem 0;
