@@ -24,6 +24,11 @@ export class PensamentoService {
     return this.http.get<Pensamento[]>(this.API, { params })
   }
 
+  favoritar(pensamento: Pensamento): Observable<Pensamento> {
+    const url = `${this.API}/${pensamento.id}`
+    return this.http.put<Pensamento>(url, { ...pensamento, favorito: !pensamento.favorito })
+  }
+
   criar(pensamento: Pensamento): Observable<Pensamento> {
     return this.http.post<Pensamento>(this.API, pensamento)
   }

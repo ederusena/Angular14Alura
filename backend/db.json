@@ -1,63 +1,59 @@
 {
   "pensamentos": [
     {
-      "id": 2,
-      "conteudo": "Chupa cu de araraquara",
-      "autoria": "Dev da madrugada",
-      "modelo": "modelo2"
-    },
-    {
-      "id": 3,
-      "conteudo": "Continue a codar... continue a codar...",
-      "autoria": "Dory programadora",
-      "modelo": "modelo3"
-    },
-    {
       "conteudo": "Testando função de editar",
       "autoria": "Angular ",
       "modelo": "modelo2",
+      "favorito": true,
       "id": 4
     },
     {
       "conteudo": "Formulario reative",
       "autoria": "",
       "modelo": "modelo1",
+      "favorito": true,
       "id": 5
     },
     {
       "conteudo": "Formulario reative",
       "autoria": "",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 6
     },
     {
       "conteudo": "Chupa 1",
       "autoria": "Chupa 1",
       "modelo": "modelo1",
+      "favorito": true,
       "id": 7
     },
     {
       "conteudo": "Chupa 2",
       "autoria": "Chupa 2",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 8
     },
     {
       "conteudo": "Chupa 3",
       "autoria": "Chupa 3",
       "modelo": "modelo3",
+      "favorito": false,
       "id": 9
     },
     {
       "conteudo": "Chupa 4",
       "autoria": "Chupa 4",
       "modelo": "modelo1",
+      "favorito": false,
       "id": 10
     },
     {
       "conteudo": "Chupa 5",
       "autoria": "Chupa 5",
       "modelo": "modelo2",
+      "favorito": false,
       "id": 11
     }
   ]
